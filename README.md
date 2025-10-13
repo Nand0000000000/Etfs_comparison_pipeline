@@ -2,7 +2,9 @@
 
 ## Título e Descrição do Projeto
 
-Este projeto implementa um pipeline de dados completo para análise financeira. Ele automatiza o processo de coleta de dados históricos para vários ativos financeiros (como NASDAQ, Ibovespa e Bitcoin), realiza transformações e cálculos (por exemplo, retornos diários, volatilidade, médias móveis), armazena os dados processados e gera visualizações para fornecer insights sobre o desempenho do mercado. O objetivo é criar um fluxo de trabalho robusto e reproduzível para exploração de dados financeiros.
+Este projeto implementa um pipeline completo de análise financeira, automatizando desde a coleta de dados até a visualização de resultados.
+O sistema realiza a extração de dados históricos de diferentes ativos (como NASDAQ, Ibovespa e Bitcoin), aplica transformações e cálculos estatísticos (retornos diários, volatilidade, médias móveis, etc.), armazena os dados processados e gera visualizações interativas que facilitam a interpretação do desempenho do mercado.
+O principal objetivo é oferecer um fluxo de trabalho robusto, reprodutível e escalável para exploração e análise de dados financeiros.
 
 ## Funcionalidades
 
