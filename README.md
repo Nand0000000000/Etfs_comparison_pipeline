@@ -1,16 +1,28 @@
-# Pipeline de Análise Financeira - Big Data
+# Pipeline de Análise de Dados Financeiros
 
-Este projeto implementa um pipeline simples para coletar, processar, armazenar e visualizar dados financeiros de diferentes ativos (Nasdaq, Ibovespa, Bitcoin) utilizando Python e bibliotecas como `yfinance`, `pandas`, `plotly` e `dash` (embora o dashboard Dash completo não esteja implementado neste notebook, a estrutura para visualização com Plotly está pronta). O pipeline é modular, com classes dedicadas para cada etapa do processo.
+## Título e Descrição do Projeto
 
-## Estrutura do Projeto
+Este projeto implementa um pipeline de dados completo para análise financeira. Ele automatiza o processo de coleta de dados históricos para vários ativos financeiros (como NASDAQ, Ibovespa e Bitcoin), realiza transformações e cálculos (por exemplo, retornos diários, volatilidade, médias móveis), armazena os dados processados e gera visualizações para fornecer insights sobre o desempenho do mercado. O objetivo é criar um fluxo de trabalho robusto e reproduzível para exploração de dados financeiros.
 
-O projeto é composto pelas seguintes classes principais:
+## Funcionalidades
 
-1.  **`FinancialDataIngestion`**: Responsável pela coleta de dados de fontes externas (atualmente utilizando a biblioteca `yfinance`).
-2.  **`FinancialDataTransformation`**: Realiza a limpeza e o enriquecimento dos dados (cálculo de retornos, médias móveis, etc.).
-3.  **`FinancialDataStorage`**: Gerencia o armazenamento dos dados brutos e processados em diferentes formatos (CSV, Parquet).
-4.  **`FinancialDashboard`**: Contém métodos para gerar visualizações dos dados processados utilizando Plotly.
+*   **Ingestão de Dados:** Coleta dados históricos de preços e volume para ativos selecionados usando a API do Yahoo Finance.
+*   **Transformação de Dados:** Limpa os dados brutos, calcula retornos diários e acumulados, volatilidade e médias móveis.
+*   **Armazenamento de Dados:** Salva os dados brutos e processados em formatos CSV e Parquet, simulando um Data Lake local.
+*   **Visualizações:** Gera gráficos interativos (preços, retornos, volatilidade, volume, médias móveis e candlestick) para análise visual.
+*   **Resumo:** Apresenta uma tabela resumo com métricas chave de desempenho para cada ativo.
 
-## Configuração e Instalação
+## Tecnologias Utilizadas
 
-1.  **Clonar o repositório (se aplicável):** Se este código estiver em um repositório, clone-o para sua máquina local ou ambiente de trabalho (como o Google Colab).
+*   **Python:** Linguagem de programação principal.
+*   **pandas:** Manipulação e análise de dados.
+*   **plotly:** Geração de visualizações interativas.
+*   **dash:** (Mencionado no `pip install`, mas não totalmente utilizado para um dashboard completo neste notebook)
+*   **yfinance:** Coleta de dados financeiros.
+*   **schedule:** (Mencionado no `pip install`, para agendamento futuro)
+*   **python-dotenv:** (Mencionado no `pip install`, para variáveis de ambiente futuras)
+*   **requests, numpy, datetime, json, os, typing:** Bibliotecas auxiliares.
+
+## Como Configurar
+
+1.  **Clonar o Repositório:** (Se o projeto estiver em um repositório)
